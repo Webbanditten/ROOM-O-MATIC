@@ -52,7 +52,7 @@ body,html {
     color:#99ff66;
     background: repeating-linear-gradient(to bottom,  #325509 0px 3px, #195004 3px 6px)
 }
-.nav-list-link .active {
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
     background-image: unset !important;
     color: #99ff66;
 }
