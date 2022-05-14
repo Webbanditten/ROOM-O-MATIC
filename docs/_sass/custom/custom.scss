@@ -1,4 +1,24 @@
-body {
-    background-color: red;
+@font-face {
+    font-family: 'HabboTwelve';
+    src: url('/assets/fonts/15_HabboTwelveBold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/assets/fonts/15_HabboTwelveBold.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'HabboTwelve';
+    src: url('/assets/fonts/260_HabboTwelveRg.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/assets/fonts/260_HabboTwelveRg.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Volter';
+    src: url('/assets/fonts/volter.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/assets/fonts/volter.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+body,html {
+    font-family: 'Volter';
 }
 
+.main-content-wrap {
+
+}
