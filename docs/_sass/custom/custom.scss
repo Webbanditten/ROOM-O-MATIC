@@ -18,8 +18,6 @@
 * {
     font-smooth:never;
     -webkit-font-smoothing: none;
-}
-img { 
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
     image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -28,6 +26,7 @@ img {
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
+
 body,html {
     font-family: 'HabboTwelve';
     font-size: 18px;
