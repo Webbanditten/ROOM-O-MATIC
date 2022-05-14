@@ -81,9 +81,53 @@ h4,.text-delta {
 .nav-list .nav-list-item .nav-list-link {
     color: #99ff66 !important;
 }
+
+
+// ICONS
 span.habbo-icon::before {
     font-family: 'Volter';
 }
 span.habbo-icon.fish::before {
     content: "\00AC";
 }
+span.habbo-icon.heart::before {
+    content: "\007C";
+}
+span.habbo-icon.star::before {
+    content: "\00A5";
+}
+span.habbo-icon.skull::before {
+    content: "\00AA";
+}
+span.habbo-icon.phone::before {
+    content: "\00B1";
+}
+span.habbo-icon.coffee::before {
+    content: "\00B5";
+}
+span.habbo-icon.lightbulb::before {
+    content: "\00B6";
+}
+span.habbo-icon.lightning::before {
+    content: "\00BA";
+}
+span.habbo-icon.thumb-up::before {
+    content: "\2022";
+}
+span.habbo-icon.thumb-down::before {
+    content: "\00F7";
+}
+span.habbo-icon.music::before {
+    content: "\2014";
+}
+span.habbo-icon.lock::before {
+    content: "\2018";
+}
+span.habbo-icon.stop::before {
+    content: "\2021";
+}
+span.habbo-icon.bomb::before {
+    content: "\2020";
+}
+
+
