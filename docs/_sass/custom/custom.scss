@@ -61,7 +61,7 @@ h4,.text-delta {
     color:#7b7b29;
 }
 .breadcrumb-nav-list-item {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
 }
 .side-bar {
     color:#99ff66;
@@ -81,9 +81,9 @@ h4,.text-delta {
 .nav-list .nav-list-item .nav-list-link {
     color: #99ff66 !important;
 }
-span::before .habbo-icon {
+span.habbo-icon::before {
     font-family: 'Volter';
 }
-span::before .habbo-icon .fish {
+span.habbo-icon.fish::before {
     content: "\00AC";
 }
