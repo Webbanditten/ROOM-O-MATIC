@@ -30,7 +30,12 @@ img {
 }
 body,html {
     font-family: 'HabboTwelve';
-
+    font-size: 18px;
+}
+h4,.text-delta {
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .search-input {
@@ -55,9 +60,12 @@ body,html {
 .site-button .icon {
     color:#7b7b29;
 }
+.breadcrumb-nav-list-item {
+    font-size: 0.8rem;
+}
 .side-bar {
     color:#99ff66;
-    background: repeating-linear-gradient(to bottom,  #325509 0px 3px, #195004 3px 6px)
+    background: repeating-linear-gradient(to bottom,  #325509 0px 2px, #195004 2px 4px)
 }
 .nav-list .nav-list-item .nav-list-expander:hover {
     background-image: unset !important;
