@@ -48,6 +48,13 @@ body,html {
     border-bottom: unset !important;
     background-color: #c6b518;
 }
+.site-button:hover {
+    color: #7b7b29 !important;
+    background-image: unset;
+}
+.site-button .icon {
+    color:#7b7b29;
+}
 .side-bar {
     color:#99ff66;
     background: repeating-linear-gradient(to bottom,  #325509 0px 3px, #195004 3px 6px)
@@ -66,12 +73,9 @@ body,html {
 .nav-list .nav-list-item .nav-list-link {
     color: #99ff66 !important;
 }
-.main-content-wrap {
-
-}
-span .habbo-icon {
+span::before .habbo-icon {
     font-family: 'Volter';
 }
-span .habbo-icon .fish {
+span::before .habbo-icon .fish {
     content: "\00AC";
 }
