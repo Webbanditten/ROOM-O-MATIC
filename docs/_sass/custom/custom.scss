@@ -32,11 +32,16 @@ body,html {
     font-family: 'HabboTwelve';
 }
 
+.search-input {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'HabboTwelve';
+}
 .main-content-wrap {
 
 }
 
-span:before {
+span::before {
     .habbo-icon {
         font-family: 'Volter';
         .fish {
