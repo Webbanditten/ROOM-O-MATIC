@@ -54,7 +54,11 @@ body,html {
 }
 .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
     background-image: unset !important;
-    color: #99ff66;
+    color: #99ff66 !important;
+    font-weight: bold;
+}
+.nav-list .nav-list-item .nav-list-link {
+    color: #99ff66 !important;
 }
 .main-content-wrap {
 
