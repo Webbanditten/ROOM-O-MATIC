@@ -14,8 +14,8 @@ has_children: false
 <span class="habbo-icon coffee"></span>
 <span class="habbo-icon lightbulb"></span>
 <span class="habbo-icon lightning"></span>
-<span class="habbo-icon thump-up"></span>
-<span class="habbo-icon thump-down"></span>
+<span class="habbo-icon thumb-up"></span>
+<span class="habbo-icon thumb-down"></span>
 <span class="habbo-icon music"></span>
 <span class="habbo-icon lock"></span>
 <span class="habbo-icon stop"></span>
