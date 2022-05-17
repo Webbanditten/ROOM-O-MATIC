@@ -16,8 +16,8 @@
     url('/assets/fonts/volter.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 * {
-    //font-smooth:never;
-    //-webkit-font-smoothing: none;
+    font-smooth:never;
+    -webkit-font-smoothing: none;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
     image-rendering: -o-crisp-edges;            /* Opera                          */
