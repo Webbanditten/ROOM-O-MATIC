@@ -3,7 +3,7 @@ layout: default
 title: How to change hotel view
 parent: Habbo Client
 has_children: false
-nav_order: 1
+nav_order: 2
 ---
 # How to change hotel view
 
