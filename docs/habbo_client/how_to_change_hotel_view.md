@@ -29,6 +29,7 @@ E.g. in the image below it shows: the snowflakes as an overlaying image and "Wel
 Extra variables: 
 
 `entry.scroll.frms` (Image)
+
 `entry.scroll.desc` (Text)
 ![](../assets/images/hotel_views/view_jp.gif)
 ![](../assets/images/hotel_views/view_nl.gif)

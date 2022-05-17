@@ -116,19 +116,19 @@ Default: `0|1`
 Determines whether to allow the users to subscribe to Habbo Club within the client.
 
 ## dynamic.download.url
-Default: `hof_furni/hh_furni_xx_%typeid%.cct`
+Default: `http://localhost/v14/`
 
 This is the base URL for downloading various things like furni and sounds.
 
 ## dynamic.download.name.template
 Default: `hof_furni/hh_furni_xx_%typeid%.cct`
 
-The sub directory to load furni from. 
+The directory to load furni from. 
 
 ## dynamic.download.samples.template
 Default: `sound/%typeid%.cct`
 
-The sub directory to load sounds from. 
+The directory to load sounds from. Specifically used for loading in the Trax sounds.  
 
 Full URL will be a combination of `dynamic.download.url` and `dynamic.download.samples.template`.
 
