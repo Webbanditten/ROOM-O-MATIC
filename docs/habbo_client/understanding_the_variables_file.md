@@ -53,7 +53,7 @@ interface.cmds.photo.ctrl=[]
 interface.cmds.photo.owner=["pick","delete"]
 interface.cmds.user.ctrl=["kick","friend","ignore","trade","unignore","userpage"]
 interface.cmds.user.friend=["friend","ignore","trade","unignore","userpage"]
-interface.cmds.user.owner=["take_rights","give_rights","kick","friend","i gnor e","trade","unignore","userpage"]
+interface.cmds.user.owner=["take_rights","give_rights","kick","friend","ignore","trade","unignore","userpage"]
 interface.cmds.user.personal=["badge","dance","wave","hcdance","userpage"]
 interstitial.max.displays=5
 language=en
@@ -91,7 +91,9 @@ swimjump.key.list=[#run1:"A", #run2:"D", #dive1:"W", #dive2:"E", #dive3:"A", #di
 > Taken from https://github.com/Quackster/Kepler/blob/master/tools/Quackster_v14.zip  /v14/external_vars.txt
 
 ## cast.entry.[number]
-`cast.entry.[number]` is a variable used for telling the client to load external .CCT files (cast files). These files will be loaded from the same directory that the variables file is in.
+`cast.entry.[number]` is a variable used for telling the client to load external .CCT files (cast files). 
+
+These files will be loaded from the same directory from where `habbo.dcr` is being loaded from. 
 
 ## char.conversion.[machineType]
 `char.conversion.[machineType]` is a variable used within the inner workings of `fuse_client.cct` specifically `String Services Class`. It's used for mapping characters between platforms. Most likely for fonts. 
@@ -100,7 +102,8 @@ swimjump.key.list=[#run1:"A", #run2:"D", #dive1:"W", #dive2:"E", #dive3:"A", #di
 Default `1` (Anything goes)
 
 `client.version.id` is used within the `hh_entry.cct` which is where most of the login logic is handled. It specifically used when the client initiates the method `startSession` which only happens if the client to server communication is encrypted which most likely isn't the case for you if you're using Kepler. 
-Where Kepler to have encryption enabled and the `client.version.id` is not the same on the server-side it will prompt the client with text `alert_old_client` which is defined in the `external_texts`. 
+
+Were Kepler to have encryption enabled and the `client.version.id` is not the same on the server-side it will prompt the client with text `alert_old_client` which is defined in the `external_texts`. 
 
 ## client.window.title
 Default `Habbo Hotel`
