@@ -51,8 +51,8 @@ interface.cmds.item.ctrl=[]
 interface.cmds.item.owner=["pick"]
 interface.cmds.photo.ctrl=[]
 interface.cmds.photo.owner=["pick","delete"]
-interface.cmds.user.ctrl=["kick","friend","ignore","trade","unignore","u serp age"]
-interface.cmds.user.friend=["friend","ignore","trade","unignore","userpage "]
+interface.cmds.user.ctrl=["kick","friend","ignore","trade","unignore","userpage"]
+interface.cmds.user.friend=["friend","ignore","trade","unignore","userpage"]
 interface.cmds.user.owner=["take_rights","give_rights","kick","friend","i gnor e","trade","unignore","userpage"]
 interface.cmds.user.personal=["badge","dance","wave","hcdance","userpage"]
 interstitial.max.displays=5
@@ -92,3 +92,45 @@ swimjump.key.list=[#run1:"A", #run2:"D", #dive1:"W", #dive2:"E", #dive3:"A", #di
 
 ## cast.entry.[number]
 `cast.entry.[number]` is a variable used for telling the client to load external .CCT files (cast files). These files will be loaded from the same directory that the variables file is in.
+
+## char.conversion.[machineType]
+`char.conversion.[machineType]` is a variable used within the inner workings of `fuse_client.cct` specifically `String Services Class`. It's used for mapping characters between platforms. Most likely for fonts. 
+
+## client.version.id
+Default `1` (Anything goes)
+
+`client.version.id` is used within the `hh_entry.cct` which is where most of the login logic is handled. It specifically used when the client initiates the method `startSession` which only happens if the client to server communication is encrypted which most likely isn't the case for you if you're using Kepler. 
+Where Kepler to have encryption enabled and the `client.version.id` is not the same on the server-side it will prompt the client with text `alert_old_client` which is defined in the `external_texts`. 
+
+## client.window.title
+Default `Habbo Hotel`
+
+Will set the window title if the client is launched via Shockwave projector. 
+
+## club.subscription.disabled=[0/1]
+Determines whether to allow the users to subscribe to Habbo Club within the client.
+
+## dynamic.download.url
+Default: `hof_furni/hh_furni_xx_%typeid%.cct`
+
+This is the base URL for downloading various things like furni and sounds.
+
+## dynamic.download.name.template
+Default: `hof_furni/hh_furni_xx_%typeid%.cct`
+
+The sub directory to load furni from. 
+
+## dynamic.download.samples.template
+Default: `sound/%typeid%.cct`
+
+The sub directory to sounds from. 
+
+Full URL will be a combination of `dynamic.download.url` and `dynamic.download.samples.template`.
+
+## external.figurepartlist.txt
+Default: `http://localhost/v14/figuredata.txt`
+
+This is a url for the text file containing the figure part mapping. This is where the mapping of figures(cloth, skin, etc) is being mapped together then used within the client.
+
+## fuse.project.id
+Development variable. Used in combination with `quickLogin`. 
