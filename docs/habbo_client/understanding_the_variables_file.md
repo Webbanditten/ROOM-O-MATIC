@@ -88,7 +88,7 @@ struct.font.tooltip=[#font:"v", #fontSize:9,#lineHeight:10,#color:rgb("#000000")
 swimjump.key.list=[#run1:"A", #run2:"D", #dive1:"W", #dive2:"E", #dive3:"A", #dive4:"S", #dive5:"D", #dive6:"Z", #dive7:"X", #jump:"SPACE"]
 ```
 
-> Taken from https://github.com/Quackster/Kepler/blob/master/tools/Quackster_v14.zip  /v14/external_vars.txt
+> Taken from [Quackster V14 Zip](https://github.com/Quackster/Kepler/blob/master/tools/Quackster_v14.zip) /v14/external_vars.txt
 
 ## cast.entry.[number]
 `cast.entry.[number]` is a variable used for telling the client to load external .CCT files (cast files). 
@@ -110,7 +110,9 @@ Default `Habbo Hotel`
 
 Will set the window title if the client is launched via Shockwave projector. 
 
-## club.subscription.disabled=[0/1]
+## club.subscription.disabled
+Default: `0|1`
+
 Determines whether to allow the users to subscribe to Habbo Club within the client.
 
 ## dynamic.download.url
@@ -126,7 +128,7 @@ The sub directory to load furni from.
 ## dynamic.download.samples.template
 Default: `sound/%typeid%.cct`
 
-The sub directory to sounds from. 
+The sub directory to load sounds from. 
 
 Full URL will be a combination of `dynamic.download.url` and `dynamic.download.samples.template`.
 
@@ -137,3 +139,129 @@ This is a url for the text file containing the figure part mapping. This is wher
 
 ## fuse.project.id
 Development variable. Used in combination with `quickLogin`. 
+
+## image.library.url
+default: `http://localhost/c_images/` | `http://images.habbohotel.com/c_images/`
+
+This variable is used for loading catalogue images and badges not found in the cast files. 
+
+If the client is unable to find the catalogue header or teaser image it will try and load the image from the provided url constructed in the following manner:
+
+`{image.library.url}/catalogue/{headerImgName|teaserImg}_{language}.gif`
+
+## interface.cmds.[objType].[ctrlType]
+Buttons shown depending on objType and ctrlType. E.g. Room owners are being shown `interface.cmds.active.owner` for when `objType` equal to `active` and `ctrlType` equal to `owner`.
+
+## interstitial.max.displays
+Default: `5`
+
+Amount of ads to show in a session or so it seems based on the code. 
+
+Requires further fiddling to understand usage.
+
+## language
+Default: `en`
+
+Used when loading catalogue images from the server. 
+
+See `image.library.url`
+
+## link.format.userpage
+Default: `http://www.habbo.fi/home/%ID%/id/`
+
+Link for the Habbo home link used in the infostand and messenger. 
+
+## moderator.cmds
+List of chat commands that will be taking a username as the second input. E.g. `:kick Wizter`.
+
+
+
+## navigator.private.default
+Default: `navigator.visible.private.root`
+
+Determines the default category for private rooms.
+
+As you can see the default variable is equal to another variable. This is true but can be overwritten. 
+
+## navigator.public.default
+Default: `navigator.visible.public.root`
+
+Determines the default category for public rooms.
+
+As you can see the default variable is equal to another variable. This is true but can be overwritten. 
+
+## navigator.visible.private.root
+
+Determines the default category for private rooms.
+
+## navigator.visible.public.root
+
+Determines the default category for public rooms.
+
+##  paalu.key.list
+Default: `[#bal1:"Q", #bal2:"E", #push1:"A", #push2:"D", #move1:"N", #move2:"M", #stabilise:"SPACE"]`
+
+The keys used for WobbleSquabble. 
+
+## permitted.name.chars
+Default: `1234567890qwertyuiopasdfghjkl zxcvbnm-=?!@:.,`
+
+As the variable hints this is the permitted characters allowed in a username during registration. 
+
+## permitted.password.chars
+Default: `1234567890qwertyuiopasdfg hjklzxcvbnm-=?!@:.,`
+
+As the variable hints this is the permitted characters allowed in a password during registration. 
+
+## purse.transactions.active
+Default: `0|1`
+
+Determines whether to allow the user to see a list of transactions within the Habbo wallet. 
+
+## room.cast.[number]
+Cast loaded when entering a room. 
+
+## room.cast.private
+Cast loaded when joining a private room.
+
+## room.cast.small.[number]
+Casts loaded for small rendered rooms, like large public rooms, large private rooms.
+
+## room.default.floor
+Default: `203`
+
+Default floor color palette id. Found in `hh_room_private.cct`.
+
+## room.default.wall
+Default: `201`
+
+Default wall color palette id. Found in `hh_room_private.cct`.
+
+## stats.tracking.javascript.template
+This is not required.
+
+Tracking url. This URL will be called from time to time to save analytics. 
+
+**Don't use this if you're using Shockwave projector to run the Habbo Client. This will cause Internet Explorer to open.**
+
+## stats.tracking.javascript
+This is not required. 
+
+**Don't use this if you're using Shockwave projector to run the Habbo Client. This will cause Internet Explorer to open.**
+
+## struct.font.[fontStyle]
+ 
+Determines the font style. 
+
+## swimjump.key.list
+Default: `[#run1:"A", #run2:"D", #dive1:"W", #dive2:"E", #dive3:"A", #dive4:"S", #dive5:"D", #dive6:"Z", #dive7:"X", #jump:"SPACE"]`
+
+Controls for the Lido tower jump. 
+
+## navigator.updatetime
+How often the navigator should refresh. 
+
+## purse.valuefield.active 
+Tells whether to show the value of the credits in the transaction log within the wallet. 
+
+
