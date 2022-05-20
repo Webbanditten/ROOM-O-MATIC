@@ -7,7 +7,7 @@ nav_order: 2
 ---
 # How to change hotel view
 
-TBA
+In order to edit the hotel view all you need to do is open up the `external_variables` file and find existing entry. 
 
 ## Austria
 Filename: `hh_entry_au.cct`
