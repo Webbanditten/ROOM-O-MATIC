@@ -7,7 +7,22 @@ nav_order: 2
 ---
 # How to change hotel view
 
-In order to edit the hotel view all you need to do is open up the `external_variables` file and find existing entry. 
+In order to edit the hotel view all you need to do is open up the `external_variables.txt` file and find existing entry. 
+
+E.g: 
+```
+...
+cast.entry.1=hh_interface
+cast.entry.2=hh_patch_uk   <----------
+cast.entry.3=hh_people_1
+...
+```
+
+Then you change that `cast.entry` to some other `hh_entry` file instead. 
+Below are a list of official hotel views and their corresponding file name.
+
+In our example replacing `hh_patch_uk` with `hh_patch_au` will change the hotel view to Australian. 
+
 
 ## Austria
 Filename: `hh_entry_au.cct`
