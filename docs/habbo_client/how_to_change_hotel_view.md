@@ -60,7 +60,7 @@ The image is controlled by the `entry.scroll.desc` variable which links to a fil
 
 ![](../assets/images/hotel_views/scrollerPicData.gif)
 
-Extra variables: 
+Extra variables that can be added to `external_variables`: 
 
 `entry.scroll.frms`
 
