@@ -16,7 +16,7 @@ cast.entry.1=hh_interface
 cast.entry.2=hh_patch_uk   <----------
 cast.entry.3=hh_people_1
 ...
-cast.entry.16=hh_entry_au   <----------
+cast.entry.16=hh_entry_uk  <----------
 ...
 ```
 
@@ -26,7 +26,7 @@ Below are a list of official hotel views and their corresponding file name.
 In our example replacing `hh_entry_uk` with `hh_entry_au` will change the hotel view to Australian. 
 
 It's important to change both the `hh_entry` and `hh_patch` file as `hh_patch` contains literal patches to assets. 
-E.g. Changing `hh_patch_uk` to `hh_patch_dk` will replace the catalogue images to danish. 
+E.g. Changing `hh_patch_uk` to `hh_patch_dk` will replace the catalogue images with the danish assets. 
 
 ## Australia
 Filename: `hh_entry_au.cct`
