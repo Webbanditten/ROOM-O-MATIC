@@ -81,9 +81,9 @@ The image is controlled by the `entry.scroll.desc` variable which links to a fil
 
 Extra variables that can be added to `external_variables`: 
 
-`entry.scroll.frms`
+`entry.scroll.frms=/c_images/scrollerPicData.gif`
 
-`entry.scroll.desc`
+`entry.scroll.desc=/c_images/scrollerTextData.txt`
 
 ![](../assets/images/hotel_views/view_jp.gif)
 
